@@ -1,0 +1,27 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+RWStructuredBuffer<float3> CurrentBuffer;
+RWStructuredBuffer<float3> PreviousBuffer;
+RWTexture2D<float4> Result;
+float k1, k2, k3;
+int width, height;
+
+float invLerp(float from, float to, float value)
+{
+    return (value - from) / (to - from);
+}
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    if(id.x == 0 || id.y == 0 || id.y == height-1 || id.x == width-1)
+        return;
+
+    PreviousBuffer[id.x + id.y * width].z = k1 * CurrentBuffer[id.x + id.y * width].z + k2 * PreviousBuffer[id.x + id.y * width].z +
+    k3 * (CurrentBuffer[id.x + 1 + id.y * width].z + CurrentBuffer[id.x - 1 + id.y * width].z +
+    CurrentBuffer[id.x + width + id.y * width].z + CurrentBuffer[id.x - width + id.y * width].z);
+
+    Result[id.xy] = invLerp(-0.2f, 0.2f, CurrentBuffer[id.x + id.y * width].z);
+}
+

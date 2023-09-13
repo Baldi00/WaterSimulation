@@ -842,6 +842,8 @@ MonoBehaviour:
   isRaining: 0
   drawGizmos: 0
   heightMap: {fileID: 0}
+  fluidSimulationCompute: {fileID: 7200000, guid: b8bce93cd44ef134ba614f78dd82a181,
+    type: 3}
 --- !u!65 &2146729866
 BoxCollider:
   m_ObjectHideFlags: 0
