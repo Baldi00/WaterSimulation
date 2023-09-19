@@ -31,7 +31,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ReflectionCubemap:
-        m_Texture: {fileID: 8900000, guid: 145934fc6705dda4f8ea7f1258b9d011, type: 3}
+        m_Texture: {fileID: 8900000, guid: 5511b337d9f009240965f27af73bc8a4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -69,9 +69,9 @@ Material:
     - _WaterNoiseScale1: 15
     - _WaterNoiseScale2: 10
     m_Colors:
-    - _Color: {r: 0.5855287, g: 0.7957075, b: 0.8113208, a: 1}
+    - _Color: {r: 0, g: 0.79097223, b: 1, a: 1}
     - _FoamSpeed: {r: 0.01, g: 0.01, b: 0, a: 0}
-    - _SkyColor: {r: 0.3023318, g: 0.63166386, b: 0.8113208, a: 1}
+    - _SkyColor: {r: 0, g: 0.7125139, b: 1, a: 1}
     - _WaterDetailsSpeed: {r: -0.01, g: -0.01, b: 0, a: 0}
     - _WaterSpeed1: {r: 0.05, g: 0.05, b: 0, a: 0}
     - _WaterSpeed2: {r: -0.1, g: -0.1, b: 0, a: 0}
