@@ -310,6 +310,9 @@ public class FluidSimulation : MonoBehaviour
 
         heightMap = new RenderTexture(widthAndHeight, widthAndHeight, 0, RenderTextureFormat.R8);
         heightMap.enableRandomWrite = true;
+        heightMap.autoGenerateMips = false;
+        heightMap.anisoLevel = 16;
+        heightMap.Create();
 
         //heightMap = new Texture2D(textureResolution, textureResolution, TextureFormat.R8, false);
         //heightMap.wrapMode = TextureWrapMode.Clamp;

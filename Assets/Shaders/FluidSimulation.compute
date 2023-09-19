@@ -22,6 +22,6 @@ void CSMain (uint3 id : SV_DispatchThreadID)
     k3 * (CurrentBuffer[id.x + 1 + id.y * width].z + CurrentBuffer[id.x - 1 + id.y * width].z +
     CurrentBuffer[id.x + width + id.y * width].z + CurrentBuffer[id.x - width + id.y * width].z);
 
-    Result[id.xy] = invLerp(-0.2f, 0.2f, CurrentBuffer[id.x + id.y * width].z);
+    Result[id.xy] = invLerp(-0.05f, 0.05f, CurrentBuffer[id.x + id.y * width].z);
 }
 
