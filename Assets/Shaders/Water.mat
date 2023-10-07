@@ -64,7 +64,7 @@ Material:
     - _Refraction: 0.1
     - _SimulationStrength: 0.5
     - _Smoothness: 1
-    - _WaterDetailsScale: 300
+    - _WaterDetailsScale: 100
     - _WaterNoiseInterpolation: 0.5
     - _WaterNoiseScale1: 15
     - _WaterNoiseScale2: 10

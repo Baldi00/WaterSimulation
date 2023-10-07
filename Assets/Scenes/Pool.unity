@@ -1296,12 +1296,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda5e487bbb62f04ca2eb9a4a3bbdc74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  widthAndHeight: 200
-  distance: 0.05
+  planeDefaultLength: 10
   timeSlice: 0.2
   wavePropagationVelocity: 0.15
   viscosity: 0.15
-  textureResolution: 100
+  textureResolution: 1024
   minPlaneX: -5
   maxPlaneX: 5
   minPlaneY: -5
@@ -1309,9 +1308,9 @@ MonoBehaviour:
   playerMovingForce: -0.15
   rainForce: -0.2
   objectEnterForce: -1.5
-  isRaining: 0
-  drawGizmos: 0
-  heightMap: {fileID: 0}
+  waterSimulationRTMaterial: {fileID: 2100000, guid: 7bf5ba5f1d09ac6479e0d858b2c943fd,
+    type: 2}
+  waterSimulationRT: {fileID: 0}
 --- !u!65 &2146729866
 BoxCollider:
   m_ObjectHideFlags: 0
